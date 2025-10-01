@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Portofolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Banna</a>
+
+        <nav>
+            <a href="#home" class="active"> Home</a>
+            <a href="#services"> Service</a>
+            <a href="#skills"> Skills</a>
+            <a href="#education"> Education</a>
+            <a href="#experience"> Experience</a>
+            <a href="#contact"> Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="myfoto.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Watashi no na wa <span>Ahmad Al Banna</span></h1>
+            <h3 class="typing-text">I'm a <span id="typing"></span></h3><br>
+            <div class="panel">
+            <p>Saya Ahmad Al Banna, seorang Web Developer, Graphic Designer, Editor, dan UI/UX Designer.
+                Saya seorang mahasiswa dari kampus Universitas Negeri Medan yang memiliki ketertarikan pada bidang teknologi
+                . Saya memiliki pengalaman menjadi Graphic Designer di PT. Jasamarga selama 3 bulan.
+                Dari pengalaman itu, saya belajar banyak hal seperti menggunakan photoshop, pewarnaan, manipulasi visual,
+                dan tipografi. Sampai sekarang saya tetap melatih skill saya agar menambah pengetahuan saya tentang desain
+                dan terkadang melatih skill coding agar menjadi seorang UI/UX Designer atau FrontEnd Developer. Saya sudah
+                menetapkan jalan saya dan ingin terus maju untuk menjadi seorang yang ahli di bidangnya. 
+            </p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/emoji_banana/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@emoji_banana"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <a href="#contact" class="btn">Hire Me</a>
+            
+        </div>
+
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>saya mampu membuat sebuah website sederhana dengan html, css, dan bahasa pemograman PHP.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h3>Graphic Design</h3>
+                <p>Saya membuat sebuah desain poster, logo, dan visual konten yang nyaman untuk dilihat dan mudah untuk dimengerti.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>UI/UX Design</h3>
+                <p>Saya membuat sebuah desain website yang nyaman dan mudah dimngerti untuk pengguna.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>PHP</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2 class="heading">My <span>Education</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Universitas Negeri Medan</h3>
+                <p>Bachelor of Computer Science</p>
+                <span>2025 - Present</span>
+            </div>
+            <div class="timeline-item">
+                <h3>SMK Tritech Informatika Medan</h3>
+                <p>Software Engineering</p>
+                <span>2022 - 2025</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="heading">My <span>Experience</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Design Graphic</h3>
+                <p>PT.Jasamarga (Persero) Tbk.Belmera</p>
+                <span>3 January 2024 - 1 Marth 2024</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        const words = ["Graphic Designer", "UI/UX Designer", "Graphic Designer", "Editor", "Web Developer"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typing');
+
+        function typeWriter() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typingElement.textContent = currentWord.substring(0, charIndex--);
+            } else {
+                typingElement.textContent = currentWord.substring(0, charIndex++);
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(typeWriter, 1000); // pause before deleting
+            } else if (isDeleting && charIndex < 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(typeWriter, 500); // pause before next word
+            } else {
+                setTimeout(typeWriter, isDeleting ? 100 : 200); // typing/deleting speed
+            }
+        }
+
+        typeWriter();
+    </script>
+</body>
+</html>
