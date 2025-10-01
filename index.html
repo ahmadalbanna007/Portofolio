@@ -57,7 +57,7 @@
             <div class="service-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
-                <p>saya mampu membuat sebuah website sederhana dengan html, css, dan bahasa pemograman PHP.</p>
+            <p>saya mampu membuat sebuah website sederhana dengan html, css, dan bahasa pemrograman PHP.</p>
             </div>
             <div class="service-box">
                 <i class="fa-solid fa-paintbrush"></i>
@@ -67,7 +67,7 @@
             <div class="service-box">
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <h3>UI/UX Design</h3>
-                <p>Saya membuat sebuah desain website yang nyaman dan mudah dimngerti untuk pengguna.</p>
+                <p>Saya membuat sebuah desain website yang nyaman dan mudah dimengerti untuk pengguna.</p>
             </div>
         </div>
     </section>
@@ -124,7 +124,7 @@
             <div class="timeline-item">
                 <h3>Design Graphic</h3>
                 <p>PT.Jasamarga (Persero) Tbk.Belmera</p>
-                <span>3 January 2024 - 1 Marth 2024</span>
+                <span>3 January 2024 - 1 March 2024</span>
             </div>
         </div>
     </section>
@@ -145,8 +145,19 @@
         </form>
     </section>
 
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ahmad Al Banna. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/emoji_banana/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@emoji_banana"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        const words = ["Graphic Designer", "UI/UX Designer", "Graphic Designer", "Editor", "Web Developer"];
+        const words = ["Graphic Designer", "UI/UX Designer", "Editor", "Web Developer"];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -173,6 +184,26 @@
         }
 
         typeWriter();
+
+        // Scroll animation
+        const sections = document.querySelectorAll('section');
+
+        function checkVisibility() {
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if (sectionTop < triggerBottom) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility(); // Initial check
     </script>
 </body>
 </html>
