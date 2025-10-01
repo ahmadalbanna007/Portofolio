@@ -127,6 +127,13 @@ section{
     line-height: 1.3;
 }
 
+.home .home-content h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 1.3;
+}
+
 .home-content h1 span {
     background: linear-gradient(to left, #DA70D6, #1E90FF, #4169E1, #8A2BE2, #4169E1, #1E90FF, #DA70D6);
     background-clip: text;
@@ -137,19 +144,15 @@ section{
 
 
 .home-content p {
-    font-size: 4rem;
+    font-size: 15px;
     margin: 20px;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .home-content h3 {
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
-}
-
-.home-content p{
-    font-size: 1.6rem;
 }
 
 .home-img{
