@@ -496,8 +496,8 @@ section.visible {
 }
 
 .about-content{
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: auto;
     font-size: 2.2rem;
     line-height: 2;
     color: white;
@@ -508,9 +508,10 @@ section.visible {
     margin-left: auto;
 }
 
-.about-content p {
-    max-width: 700px;
-    margin: 0 auto;
+.about-content p{
+    max-width: 1000px;
+    text-align: justify;
+    margin: auto;
 }
 
 .timeline{
