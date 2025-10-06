@@ -53,10 +53,14 @@ header {
 
 .logo{
     font-size: 3rem;
-    color: blueviolet;
+    background: linear-gradient(to left, #DA70D6, #1E90FF, #4169E1, #8A2BE2, #4169E1, #1E90FF, #DA70D6);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s ease-in-out infinite;
     font-weight: 800;
     cursor: pointer;
-    transition: 0.05s ease;
+    transition: 0.3s ease;
 }
 
 .logo:hover{
@@ -154,7 +158,6 @@ section.visible {
     animation: animated 5s ease-in-out infinite;
 }
 
-
 .home-content p {
     font-size: 15px;
     margin: 20px;
@@ -172,9 +175,18 @@ section.visible {
     position: relative;
     width: 400px;
     border-radius: 100%;
-    box-shadow: 0 0 25px solid blueviolet;
+    box-shadow: 0 0 25px blueviolet;
+    border: 5px solid blueviolet;
     cursor: pointer;
     transition: 0.25s linear;
+}
+
+.home-img img:hover{
+    transform: scale(1.1) translateY(-2px);
+    transition: 0.5s;
+    border: 5px solid rgb(255, 255, 0);
+    box-shadow: 0 0 50px rgb(255, 200, 0);
+    position: relative;
 }
 
 .social-icons a{
@@ -414,9 +426,13 @@ section.visible {
 }
 
 .heading{
-    text-align: center;
-    font-size: 4.5rem;
+    background: linear-gradient(to left, #DA70D6, #1E90FF, #4169E1, #8A2BE2, #4169E1, #1E90FF, #DA70D6);
+    font-size: 3.6rem;
     margin-bottom: 3rem;
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s ease-in-out infinite;
 }
 
 .services{
@@ -492,25 +508,33 @@ section.visible {
 }
 
 .about, .education, .experience{
-    padding: 1rem 2%;
+    padding: 1rem 8%;
 }
 
 .about-content{
     max-width: 1200px;
     margin: auto;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     line-height: 2;
-    color: white;
+    color: rgba(255, 255, 255, 0.633);
     width: 100%; 
     background: rgba(138, 43, 226, 0.1);
     padding: 3rem 4%;
     border-radius: 1rem; 
     margin-left: auto;
+    transition: 0.3s;
+    border: 2px solid blueviolet;
+}
+
+.about-content:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px blueviolet;
+    color: white;
 }
 
 .about-content p{
-    max-width: 1000px;
-    text-align: justify;
+    max-width: 900px;
+    text-align: center;
     margin: auto;
 }
 
